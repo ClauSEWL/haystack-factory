@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#B5402F">
+<meta name="referrer" content="no-referrer">
+<title>Support · Haystack Factory</title>
+<meta name="description" content="Help with the game: restoring purchases, managing the VIP subscription, saves and iCloud Backup, and how to contact us.">
+<style>
+:root {
+  --bg:#F6EAD2; --paper:#FFFBF2; --ink:#3A2A1A; --ink-soft:#6E5843; --barn:#B5402F; --barn-dark:#8E3022;
+  --straw:#E9B949; --straw-deep:#C48A1A; --meadow:#3F7A2F; --line:#E7D4B0; --stitch:rgba(181,64,47,.42);
+  --soft:rgba(233,185,73,.14); --shadow:rgba(90,55,10,.12); --link:#A63A2A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#1B140E; --paper:#261C14; --ink:#F3E7D3; --ink-soft:#C9B49B; --barn:#C9533F; --barn-dark:#7E2A1E;
+    --straw:#F2C65A; --straw-deep:#E3B04A; --meadow:#8CC775; --line:#3E2F21; --stitch:rgba(242,198,90,.38);
+    --soft:rgba(242,198,90,.08); --shadow:rgba(0,0,0,.4); --link:#F2C65A;
+  }
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.barn { background:repeating-linear-gradient(90deg, var(--barn) 0 54px, var(--barn-dark) 54px 57px);
+  color:#FFF6E3; text-align:center; padding:34px 16px 30px; }
+.barn a { color:inherit; text-decoration:none; }
+.barn .logo { display:inline-flex; align-items:center; gap:12px; }
+.barn svg { width:44px; height:44px; flex:none; }
+.brand { font-family:ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; font-weight:900;
+  font-size:30px; letter-spacing:.3px; color:var(--straw); text-shadow:0 2px 0 rgba(0,0,0,.25); }
+.barn .sub { margin-top:4px; font-weight:600; opacity:.92; font-size:15px; }
+.hay { height:18px; background:
+  repeating-linear-gradient(112deg, var(--straw) 0 3px, transparent 3px 9px),
+  repeating-linear-gradient(68deg, var(--straw-deep) 0 2px, transparent 2px 11px), #D9A73A; opacity:.9; }
+main { max-width:780px; margin:28px auto 40px; padding:30px 30px 24px; background:var(--paper);
+  border-radius:20px; box-shadow:0 10px 30px var(--shadow); position:relative; }
+main::before { content:""; position:absolute; inset:9px; border:2px dashed var(--stitch); border-radius:14px; pointer-events:none; }
+@media (max-width:640px) { main { margin:16px 16px 28px; padding:22px 18px 18px; } .brand { font-size:25px; } }
+h1 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:900; font-size:30px; line-height:1.2; margin:4px 0 10px; color:var(--barn); }
+h2 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:800; font-size:21px; margin:34px 0 8px;
+  padding-bottom:6px; border-bottom:2px dashed var(--line); scroll-margin-top:12px; }
+h3 { font-size:17px; margin:24px 0 4px; scroll-margin-top:12px; }
+p, li { overflow-wrap:anywhere; }
+a { color:var(--link); text-underline-offset:2px; }
+ul { padding-left:22px; } li { margin:4px 0; }
+.meta { color:var(--ink-soft); font-size:15px; margin:0 0 14px; }
+.meta strong { color:var(--ink); }
+.short { background:var(--soft); border-radius:14px; padding:6px 18px 8px 46px; border:1px solid var(--line); }
+.short li { list-style:"\1F33E  "; }
+.toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 6px; padding:0; list-style:none; }
+.toc li { margin:0; }
+.toc a { display:inline-block; font-size:14px; font-weight:600; text-decoration:none; padding:5px 11px; border-radius:999px;
+  background:var(--bg); color:var(--ink); border:1px solid var(--line); }
+.promise { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px; margin:12px 0 4px; padding:0; list-style:none; }
+.promise li { margin:0; background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:15px; }
+.promise b { display:block; font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-size:17px; color:var(--meadow); margin-bottom:2px; }
+.card { background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:14px 0; }
+.card p { margin:4px 0; }
+.email { font-size:19px; font-weight:700; }
+.pitch { font-size:19px; text-align:center; margin:6px 0 18px; }
+.cta { text-align:center; margin:18px 0 8px; }
+.button { display:inline-block; background:var(--barn); color:#FFF6E3; font-weight:800; text-decoration:none;
+  padding:12px 22px; border-radius:999px; box-shadow:0 3px 0 var(--barn-dark); }
+.links { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:10px; margin:22px 0 6px; padding:0; list-style:none; }
+.links li { margin:0; }
+.links a { display:block; height:100%; text-decoration:none; color:var(--ink); background:var(--bg); border:1px solid var(--line);
+  border-radius:14px; padding:12px 14px; }
+.links b { display:block; color:var(--barn); font-size:17px; }
+.links span { font-size:15px; color:var(--ink-soft); }
+footer { text-align:center; color:var(--ink-soft); font-size:14px; padding:0 16px 40px; }
+footer nav { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 16px; margin-bottom:6px; }
+footer a { color:inherit; font-weight:600; }
+</style>
+</head>
+<body>
+<header class="barn">
+  <a class="logo" href="./">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 8l18 14v20H6z" fill="#FFF6E3"/><path d="M10 24 24 13l14 11v16H10z" fill="#B5402F"/><path d="M17 40V27h14v13" fill="none" stroke="#FFF6E3" stroke-width="2.5"/><path d="m17 27 14 13M31 27 17 40" stroke="#FFF6E3" stroke-width="2"/><circle cx="24" cy="20" r="2.6" fill="#E9B949"/></svg>
+    <span class="brand">Haystack Factory</span>
+  </a>
+  <div class="sub">Grandma's barn · Support</div>
+</header>
+<div class="hay" aria-hidden="true"></div>
+
+<main>
+<h1>Support</h1>
+<p class="meta">Help for the game on iPhone</p>
+
+<div class="card" id="contact">
+  <p>Questions, a bug, or an idea? Email us. We usually reply within a few working days.</p>
+  <p><a class="email" href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a></p>
+  <p>Please include your device model, your iOS version, the game's version (open the pause menu, then <strong>Help &amp; About</strong>) and, for a bug, what you were doing just before it happened. A screenshot helps a lot.</p>
+</div>
+
+<ul class="toc">
+  <li><a href="#restore">Restoring purchases</a></li><li><a href="#vip">Haystack VIP</a></li><li><a href="#saves">Saves</a></li>
+  <li><a href="#icloud">iCloud Backup &amp; new devices</a></li><li><a href="#refunds">Refunds</a></li><li><a href="#gamecenter">Game Center</a></li>
+  <li><a href="#data">Your data</a></li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+
+<h3 id="restore">I bought something and don't see it. How do I restore purchases?</h3>
+<p>Open the pause menu (the button at the top right), then <strong>Help &amp; About → Restore Purchases</strong>. The Farm Shop (pause menu → <strong>Farm Shop</strong>) has a Restore button too. Make sure you're signed in to the App Store with the same Apple Account you bought with.</p>
+<ul>
+  <li><strong>Double Coins</strong> and <strong>Golden Detector</strong> are permanent: they come back on every device signed in to that Apple Account.</li>
+  <li><strong>Starter Farm Pack</strong> adds its coins to your farm once. Restoring it confirms you own it; it doesn't add the coins a second time to the same farm.</li>
+  <li><strong>Haystack VIP</strong> comes back for as long as the subscription is active.</li>
+</ul>
+<p>If a purchase is "waiting for approval" (for example with Ask to Buy), it arrives as soon as it's approved.</p>
+
+<h3 id="vip">How do I manage or cancel Haystack VIP?</h3>
+<p>Haystack VIP is an auto-renewable subscription (weekly, monthly or yearly; the yearly plan can start with a 3-day free trial). Apple handles it, so you manage it in your Apple Account settings:</p>
+<ul>
+  <li>On your iPhone, open <strong>Settings → [your name] → Subscriptions → Haystack VIP</strong>, or open the <strong>App Store</strong>, tap your profile picture, then <strong>Subscriptions</strong>.</li>
+  <li>From there you can switch plans or tap <strong>Cancel Subscription</strong>.</li>
+</ul>
+<p>Cancel at least 24 hours before the current period (or the free trial) ends to avoid the next charge. VIP stays active until the end of the period you already paid for. Deleting the game doesn't cancel the subscription. Full details are in the <a href="terms.html#vip">Terms of Use</a>.</p>
+
+<h3 id="saves">How is my game saved?</h3>
+<p>Automatically. The game saves your barn every few seconds while you play, and again whenever you open the pause menu or leave the app. There's no account and no "save" button to remember. The save lives in the game's private storage on your device, and you can play fully offline.</p>
+
+<h3 id="icloud">Is my barn backed up? How do I move it to a new iPhone?</h3>
+<p>Your save is part of the game's data on your device, so it's included in your device's <strong>iCloud Backup</strong> (or a backup on your computer) if you have one turned on. You can check in <strong>Settings → [your name] → iCloud → iCloud Backup</strong>. The backup is optional and run by Apple; we can't see it.</p>
+<ul>
+  <li><strong>New device:</strong> set it up from your iCloud Backup, or use Quick Start to transfer from your old device. Your barn comes along with the rest of your apps' data.</li>
+  <li><strong>Installing the game fresh</strong> without restoring a backup starts a new barn. Your purchases can still be restored (see above), but progress earned by playing is only in the save.</li>
+  <li><strong>Deleting the game</strong> deletes the save on that device. A copy may remain in your most recent iCloud Backup.</li>
+</ul>
+
+<h3 id="refunds">How do I get a refund?</h3>
+<p>Purchases are made through Apple, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We can't issue refunds ourselves.</p>
+
+<h3 id="gamecenter">My Game Center scores don't show up</h3>
+<p>Game Center is optional. Check that you're signed in under <strong>Settings → Game Center</strong>, then play for a moment so the game can report your needles and achievements. You can play the whole game without Game Center.</p>
+
+<h3 id="data">What data do you collect?</h3>
+<p>None. There's no account, no tracking, and nothing is sent to us. See the <a href="privacy.html">Privacy Policy</a>.</p>
+</main>
+
+<footer>
+  <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+  © 2026 Clau SEWL · Made with a lot of hay.
+</footer>
+</body>
+</html>

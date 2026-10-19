@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#B5402F">
+<meta name="referrer" content="no-referrer">
+<title>Terms of Use · Haystack Factory</title>
+<meta name="description" content="Terms of Use for the game: license, in-app purchases, the Haystack VIP subscription and fair play.">
+<style>
+:root {
+  --bg:#F6EAD2; --paper:#FFFBF2; --ink:#3A2A1A; --ink-soft:#6E5843; --barn:#B5402F; --barn-dark:#8E3022;
+  --straw:#E9B949; --straw-deep:#C48A1A; --meadow:#3F7A2F; --line:#E7D4B0; --stitch:rgba(181,64,47,.42);
+  --soft:rgba(233,185,73,.14); --shadow:rgba(90,55,10,.12); --link:#A63A2A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#1B140E; --paper:#261C14; --ink:#F3E7D3; --ink-soft:#C9B49B; --barn:#C9533F; --barn-dark:#7E2A1E;
+    --straw:#F2C65A; --straw-deep:#E3B04A; --meadow:#8CC775; --line:#3E2F21; --stitch:rgba(242,198,90,.38);
+    --soft:rgba(242,198,90,.08); --shadow:rgba(0,0,0,.4); --link:#F2C65A;
+  }
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.barn { background:repeating-linear-gradient(90deg, var(--barn) 0 54px, var(--barn-dark) 54px 57px);
+  color:#FFF6E3; text-align:center; padding:34px 16px 30px; }
+.barn a { color:inherit; text-decoration:none; }
+.barn .logo { display:inline-flex; align-items:center; gap:12px; }
+.barn svg { width:44px; height:44px; flex:none; }
+.brand { font-family:ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; font-weight:900;
+  font-size:30px; letter-spacing:.3px; color:var(--straw); text-shadow:0 2px 0 rgba(0,0,0,.25); }
+.barn .sub { margin-top:4px; font-weight:600; opacity:.92; font-size:15px; }
+.hay { height:18px; background:
+  repeating-linear-gradient(112deg, var(--straw) 0 3px, transparent 3px 9px),
+  repeating-linear-gradient(68deg, var(--straw-deep) 0 2px, transparent 2px 11px), #D9A73A; opacity:.9; }
+main { max-width:780px; margin:28px auto 40px; padding:30px 30px 24px; background:var(--paper);
+  border-radius:20px; box-shadow:0 10px 30px var(--shadow); position:relative; }
+main::before { content:""; position:absolute; inset:9px; border:2px dashed var(--stitch); border-radius:14px; pointer-events:none; }
+@media (max-width:640px) { main { margin:16px 16px 28px; padding:22px 18px 18px; } .brand { font-size:25px; } }
+h1 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:900; font-size:30px; line-height:1.2; margin:4px 0 10px; color:var(--barn); }
+h2 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:800; font-size:21px; margin:34px 0 8px;
+  padding-bottom:6px; border-bottom:2px dashed var(--line); scroll-margin-top:12px; }
+h3 { font-size:17px; margin:24px 0 4px; scroll-margin-top:12px; }
+p, li { overflow-wrap:anywhere; }
+a { color:var(--link); text-underline-offset:2px; }
+ul { padding-left:22px; } li { margin:4px 0; }
+.meta { color:var(--ink-soft); font-size:15px; margin:0 0 14px; }
+.meta strong { color:var(--ink); }
+.short { background:var(--soft); border-radius:14px; padding:6px 18px 8px 46px; border:1px solid var(--line); }
+.short li { list-style:"\1F33E  "; }
+.toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 6px; padding:0; list-style:none; }
+.toc li { margin:0; }
+.toc a { display:inline-block; font-size:14px; font-weight:600; text-decoration:none; padding:5px 11px; border-radius:999px;
+  background:var(--bg); color:var(--ink); border:1px solid var(--line); }
+.promise { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px; margin:12px 0 4px; padding:0; list-style:none; }
+.promise li { margin:0; background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:15px; }
+.promise b { display:block; font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-size:17px; color:var(--meadow); margin-bottom:2px; }
+.card { background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:14px 0; }
+.card p { margin:4px 0; }
+.email { font-size:19px; font-weight:700; }
+.pitch { font-size:19px; text-align:center; margin:6px 0 18px; }
+.cta { text-align:center; margin:18px 0 8px; }
+.button { display:inline-block; background:var(--barn); color:#FFF6E3; font-weight:800; text-decoration:none;
+  padding:12px 22px; border-radius:999px; box-shadow:0 3px 0 var(--barn-dark); }
+.links { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:10px; margin:22px 0 6px; padding:0; list-style:none; }
+.links li { margin:0; }
+.links a { display:block; height:100%; text-decoration:none; color:var(--ink); background:var(--bg); border:1px solid var(--line);
+  border-radius:14px; padding:12px 14px; }
+.links b { display:block; color:var(--barn); font-size:17px; }
+.links span { font-size:15px; color:var(--ink-soft); }
+footer { text-align:center; color:var(--ink-soft); font-size:14px; padding:0 16px 40px; }
+footer nav { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 16px; margin-bottom:6px; }
+footer a { color:inherit; font-weight:600; }
+</style>
+</head>
+<body>
+<header class="barn">
+  <a class="logo" href="./">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 8l18 14v20H6z" fill="#FFF6E3"/><path d="M10 24 24 13l14 11v16H10z" fill="#B5402F"/><path d="M17 40V27h14v13" fill="none" stroke="#FFF6E3" stroke-width="2.5"/><path d="m17 27 14 13M31 27 17 40" stroke="#FFF6E3" stroke-width="2"/><circle cx="24" cy="20" r="2.6" fill="#E9B949"/></svg>
+    <span class="brand">Haystack Factory</span>
+  </a>
+  <div class="sub">Grandma's barn · Terms of Use</div>
+</header>
+<div class="hay" aria-hidden="true"></div>
+
+<main>
+<h1>Terms of Use</h1>
+<p class="meta"><strong>Effective date:</strong> 19 October 2026<br>
+<strong>Provider:</strong> Claudiu Tigaroi, publishing as Clau SEWL, Romania ("we", "us")<br>
+<strong>Contact:</strong> <a href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a></p>
+
+<ul class="toc">
+  <li><a href="#agreement">Agreement</a></li><li><a href="#license">License</a></li><li><a href="#promises">Promises</a></li>
+  <li><a href="#items">Virtual items</a></li><li><a href="#iap">Purchases</a></li><li><a href="#vip">Haystack VIP</a></li>
+  <li><a href="#fair">Fair play</a></li><li><a href="#ip">Ownership</a></li><li><a href="#liability">Liability</a></li>
+  <li><a href="#apple">Apple</a></li><li><a href="#law">Governing law</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+
+<h2 id="agreement">1. Agreement</h2>
+<p>By downloading or playing Haystack Factory (the "Game") you agree to these Terms and to Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> (the "Apple EULA"). Where the two conflict, the Apple EULA wins to the extent Apple requires. If you don't agree, please don't use the Game. If you're under the age of majority where you live, please read these Terms with a parent or guardian.</p>
+
+<h2 id="license">2. Your license</h2>
+<p>We give you a personal, non-exclusive, non-transferable, revocable license to use the Game on Apple devices you own or control, for your own non-commercial entertainment, as allowed by the Usage Rules in Apple's Media Services Terms. You may not copy, modify, reverse-engineer, resell or otherwise exploit the Game, except where the law allows it.</p>
+
+<h2 id="promises">3. Our fair-play promises</h2>
+<ul class="promise">
+  <li><b>Needles are never for sale</b>Every needle in the Game is found by playing. No purchase or reward can place, reveal or hand you a needle.</li>
+  <li><b>No loot boxes</b>Nothing you pay for is random. Lucky strands are free finds while you dig; their odds are fixed and shown in the Game (Farm Book → Cabinet → Lucky Jar), and nothing re-rolls.</li>
+  <li><b>A fair Daily Haystack</b>Nothing you can buy has any effect in it.</li>
+</ul>
+
+<h2 id="items">4. Coins and other virtual items</h2>
+<ul>
+  <li><strong>Coins</strong>, <strong>Golden Straws</strong> and other in-game items are earned by playing (selling hay, orders, finds and milestones); some purchases also add coins. They have no real-world monetary value, can't be exchanged for money or anything outside the Game, and can't be transferred or sold. You get a limited license to use them in the Game; they aren't your property.</li>
+  <li>We may rebalance prices, items and rewards in updates to keep the Game fun and fair. We won't take away items you paid for without giving you reasonable equivalent value, unless the law requires it or the Game is discontinued.</li>
+  <li>Your progress is stored on your device (and in your own device backups, if you use them). If you delete the Game or lose your device without a backup, we can't restore earned items, because we don't keep a copy (see the <a href="privacy.html">Privacy Policy</a>).</li>
+</ul>
+
+<h2 id="iap">5. In-app purchases</h2>
+<ul>
+  <li>The Game is free to download. Its Farm Shop offers optional permanent purchases: the <strong>Starter Farm Pack</strong> (a one-time bundle of coins, offered for a limited time after you start), <strong>Double Coins</strong> and the <strong>Golden Detector</strong>. What each one does and its price are shown in the Game before you buy.</li>
+  <li>Purchases are made from Apple and charged to your Apple Account. Apple's terms apply to them, including any right of withdrawal you have as a consumer in the EU or UK. Purchases are final once delivered, except where the law or Apple's refund policies say otherwise. Refund requests go to Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+  <li>Permanent purchases can be restored on devices signed in to the same Apple Account with <strong>Pause → Help &amp; About → Restore Purchases</strong> (or Restore in the Farm Shop). The Starter Farm Pack's coins are added to a farm once.</li>
+  <li>Parents and guardians can control purchases with Apple's Screen Time and Ask to Buy.</li>
+</ul>
+
+<h2 id="vip">6. Haystack VIP subscription</h2>
+<ul>
+  <li>Haystack VIP is offered as a weekly, monthly or yearly auto-renewable subscription. Its benefits (such as boosts that recharge faster and a daily coin gift) and its price are shown before you buy.</li>
+  <li>Payment is charged to your Apple Account when you confirm the purchase. The subscription <strong>renews automatically</strong> at the same price and length unless you cancel at least 24 hours before the current period ends; your account is charged for the renewal within the 24 hours before the period ends.</li>
+  <li>The yearly plan may start with a <strong>3-day free trial</strong> for eligible new subscribers. The trial turns into a paid yearly subscription unless you cancel at least 24 hours before it ends. Any unused part of a trial ends when you buy a subscription.</li>
+  <li>Manage or cancel in iOS <strong>Settings → [your name] → Subscriptions</strong>. Deleting the Game doesn't cancel the subscription. If you cancel, VIP stays active until the end of the period you paid for.</li>
+  <li>If the price changes, Apple tells you in advance and, where required, asks for your consent before renewing at the new price.</li>
+  <li>Subscription benefits apply only while the subscription is active, and never in the Daily Haystack.</li>
+</ul>
+
+<h2 id="fair">7. Fair play</h2>
+<p>Please don't cheat: no exploits, automation, modified apps or edited save files to gain an advantage, especially in the Daily Haystack or on Game Center leaderboards. We may remove scores that look fraudulent. Game Center is provided by Apple under Apple's terms.</p>
+
+<h2 id="sharing">8. Sharing</h2>
+<p>The Share button creates a picture of your needle card or session on your device. If you share it, you're responsible for where you post it. Please keep the Game's name on the picture.</p>
+
+<h2 id="ip">9. Intellectual property</h2>
+<p>The Game, including its name, story, characters, artwork, 3D models, machines, music, sounds and code, belongs to Claudiu Tigaroi (Clau SEWL) or its licensors and is protected by intellectual-property laws. These Terms don't give you any rights to it beyond the license in section 2.</p>
+
+<h2 id="updates">10. Updates and availability</h2>
+<p>We may update, change or discontinue the Game or any feature. Updates may change gameplay, balance or content. Some features (Game Center and purchases) need an internet connection and Apple services that may sometimes be unavailable.</p>
+
+<h2 id="disclaimer">11. Disclaimer</h2>
+<p>To the fullest extent the law allows, the Game is provided "as is" and "as available", without warranties of any kind. We don't promise that the Game will be error-free or that your save will never be lost. Nothing in these Terms limits the rights you have under mandatory consumer-protection law, including the legal guarantee of conformity for digital content in the EU.</p>
+
+<h2 id="liability">12. Limitation of liability</h2>
+<p>To the fullest extent the law allows, our total liability for any claim about the Game is limited to the amount you paid for the Game and its in-app purchases in the 12 months before the claim, and we aren't liable for indirect, incidental or consequential damages. This doesn't limit liability for death or personal injury caused by negligence, for fraud, for intentional misconduct or gross negligence, or any other liability that can't be limited by law.</p>
+
+<h2 id="apple">13. Apple (required terms)</h2>
+<ul>
+  <li>These Terms are between you and us, not Apple. We, not Apple, are solely responsible for the Game and its content.</li>
+  <li>Your license is limited to using the Game on Apple-branded products you own or control, as permitted by the Usage Rules in the Apple Media Services Terms.</li>
+  <li>Apple has no obligation to provide maintenance or support for the Game.</li>
+  <li>If the Game fails to conform to an applicable warranty, you may notify Apple and Apple will refund the purchase price (if any). To the maximum extent the law allows, Apple has no other warranty obligation with respect to the Game.</li>
+  <li>We, not Apple, are responsible for any claims by you or a third party about the Game, including product liability claims, claims that the Game fails to meet legal or regulatory requirements, and consumer-protection or privacy claims.</li>
+  <li>If a third party claims the Game or your use of it infringes their intellectual property, we, not Apple, are responsible for investigating, defending, settling and discharging the claim.</li>
+  <li>You confirm that you aren't located in a country subject to a U.S. Government embargo or designated as "terrorist supporting", and that you aren't on any U.S. Government list of prohibited or restricted parties.</li>
+  <li>Questions, complaints or claims about the Game: Claudiu Tigaroi (Clau SEWL), Romania, <a href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a>.</li>
+  <li>You must comply with applicable third-party terms when using the Game.</li>
+  <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and, once you accept them, may enforce them against you.</li>
+</ul>
+
+<h2 id="law">14. Governing law</h2>
+<p>These Terms are governed by the laws of Romania, without regard to conflict-of-law rules. If you're a consumer, you also keep the protection of the mandatory laws of the country where you live, and you may bring a claim in the courts of that country or of Romania.</p>
+
+<h2 id="contact">15. Changes and contact</h2>
+<p>We may update these Terms and will post the new version on this page with a new effective date. If a change materially affects you, we'll also mention it in the Game's update notes. Questions: <a href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+  © 2026 Clau SEWL · Made with a lot of hay.
+</footer>
+</body>
+</html>

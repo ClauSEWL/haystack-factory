@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#B5402F">
+<meta name="referrer" content="no-referrer">
+<title>Privacy Policy · Haystack Factory</title>
+<meta name="description" content="The game collects no personal data: no account and no tracking. Your save stays on your device; Apple handles purchases, Game Center and backups.">
+<style>
+:root {
+  --bg:#F6EAD2; --paper:#FFFBF2; --ink:#3A2A1A; --ink-soft:#6E5843; --barn:#B5402F; --barn-dark:#8E3022;
+  --straw:#E9B949; --straw-deep:#C48A1A; --meadow:#3F7A2F; --line:#E7D4B0; --stitch:rgba(181,64,47,.42);
+  --soft:rgba(233,185,73,.14); --shadow:rgba(90,55,10,.12); --link:#A63A2A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#1B140E; --paper:#261C14; --ink:#F3E7D3; --ink-soft:#C9B49B; --barn:#C9533F; --barn-dark:#7E2A1E;
+    --straw:#F2C65A; --straw-deep:#E3B04A; --meadow:#8CC775; --line:#3E2F21; --stitch:rgba(242,198,90,.38);
+    --soft:rgba(242,198,90,.08); --shadow:rgba(0,0,0,.4); --link:#F2C65A;
+  }
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.barn { background:repeating-linear-gradient(90deg, var(--barn) 0 54px, var(--barn-dark) 54px 57px);
+  color:#FFF6E3; text-align:center; padding:34px 16px 30px; }
+.barn a { color:inherit; text-decoration:none; }
+.barn .logo { display:inline-flex; align-items:center; gap:12px; }
+.barn svg { width:44px; height:44px; flex:none; }
+.brand { font-family:ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; font-weight:900;
+  font-size:30px; letter-spacing:.3px; color:var(--straw); text-shadow:0 2px 0 rgba(0,0,0,.25); }
+.barn .sub { margin-top:4px; font-weight:600; opacity:.92; font-size:15px; }
+.hay { height:18px; background:
+  repeating-linear-gradient(112deg, var(--straw) 0 3px, transparent 3px 9px),
+  repeating-linear-gradient(68deg, var(--straw-deep) 0 2px, transparent 2px 11px), #D9A73A; opacity:.9; }
+main { max-width:780px; margin:28px auto 40px; padding:30px 30px 24px; background:var(--paper);
+  border-radius:20px; box-shadow:0 10px 30px var(--shadow); position:relative; }
+main::before { content:""; position:absolute; inset:9px; border:2px dashed var(--stitch); border-radius:14px; pointer-events:none; }
+@media (max-width:640px) { main { margin:16px 16px 28px; padding:22px 18px 18px; } .brand { font-size:25px; } }
+h1 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:900; font-size:30px; line-height:1.2; margin:4px 0 10px; color:var(--barn); }
+h2 { font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight:800; font-size:21px; margin:34px 0 8px;
+  padding-bottom:6px; border-bottom:2px dashed var(--line); scroll-margin-top:12px; }
+h3 { font-size:17px; margin:24px 0 4px; scroll-margin-top:12px; }
+p, li { overflow-wrap:anywhere; }
+a { color:var(--link); text-underline-offset:2px; }
+ul { padding-left:22px; } li { margin:4px 0; }
+.meta { color:var(--ink-soft); font-size:15px; margin:0 0 14px; }
+.meta strong { color:var(--ink); }
+.short { background:var(--soft); border-radius:14px; padding:6px 18px 8px 46px; border:1px solid var(--line); }
+.short li { list-style:"\1F33E  "; }
+.toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 6px; padding:0; list-style:none; }
+.toc li { margin:0; }
+.toc a { display:inline-block; font-size:14px; font-weight:600; text-decoration:none; padding:5px 11px; border-radius:999px;
+  background:var(--bg); color:var(--ink); border:1px solid var(--line); }
+.promise { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px; margin:12px 0 4px; padding:0; list-style:none; }
+.promise li { margin:0; background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:15px; }
+.promise b { display:block; font-family:ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-size:17px; color:var(--meadow); margin-bottom:2px; }
+.card { background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:14px 0; }
+.card p { margin:4px 0; }
+.email { font-size:19px; font-weight:700; }
+.pitch { font-size:19px; text-align:center; margin:6px 0 18px; }
+.cta { text-align:center; margin:18px 0 8px; }
+.button { display:inline-block; background:var(--barn); color:#FFF6E3; font-weight:800; text-decoration:none;
+  padding:12px 22px; border-radius:999px; box-shadow:0 3px 0 var(--barn-dark); }
+.links { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:10px; margin:22px 0 6px; padding:0; list-style:none; }
+.links li { margin:0; }
+.links a { display:block; height:100%; text-decoration:none; color:var(--ink); background:var(--bg); border:1px solid var(--line);
+  border-radius:14px; padding:12px 14px; }
+.links b { display:block; color:var(--barn); font-size:17px; }
+.links span { font-size:15px; color:var(--ink-soft); }
+footer { text-align:center; color:var(--ink-soft); font-size:14px; padding:0 16px 40px; }
+footer nav { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 16px; margin-bottom:6px; }
+footer a { color:inherit; font-weight:600; }
+</style>
+</head>
+<body>
+<header class="barn">
+  <a class="logo" href="./">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 8l18 14v20H6z" fill="#FFF6E3"/><path d="M10 24 24 13l14 11v16H10z" fill="#B5402F"/><path d="M17 40V27h14v13" fill="none" stroke="#FFF6E3" stroke-width="2.5"/><path d="m17 27 14 13M31 27 17 40" stroke="#FFF6E3" stroke-width="2"/><circle cx="24" cy="20" r="2.6" fill="#E9B949"/></svg>
+    <span class="brand">Haystack Factory</span>
+  </a>
+  <div class="sub">Grandma's barn · Privacy Policy</div>
+</header>
+<div class="hay" aria-hidden="true"></div>
+
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>Effective date:</strong> 19 October 2026 · applies to version 1.0 and later<br>
+<strong>Developer:</strong> Claudiu Tigaroi, publishing as Clau SEWL, Romania ("we", "us")<br>
+<strong>Contact:</strong> <a href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a></p>
+
+<p>Haystack Factory ("the Game") is a single-player game for iPhone. You walk around Grandma's barn, pluck hay, build farm machines and collect the needles Grandma hid in the hay. This policy explains what happens to your information when you play.</p>
+
+<ul class="toc">
+  <li><a href="#short">Short version</a></li><li><a href="#dont">What we don't collect</a></li><li><a href="#device">On your device</a></li>
+  <li><a href="#apple">Apple services</a></li><li><a href="#sharing">Sharing</a></li><li><a href="#children">Children</a></li>
+  <li><a href="#rights">Your rights</a></li><li><a href="#changes">Changes</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+
+<h2 id="short">1. The short version</h2>
+<ul class="short">
+  <li><strong>We don't collect any personal data.</strong> No account, no ads, no analytics, no tracking. The Game doesn't send anything to us or to any other company.</li>
+  <li><strong>Your game stays on your device.</strong> Your barn, machines, coins and needle collection are saved locally.</li>
+  <li><strong>Apple handles the rest.</strong> Purchases, Game Center and iCloud Backup are Apple services, under Apple's privacy policy.</li>
+</ul>
+
+<h2 id="dont">2. What we don't collect</h2>
+<p>We don't collect, receive, sell or share any personal or usage data. In particular:</p>
+<ul>
+  <li><strong>No account.</strong> The Game never asks for your name, email address, phone number or birthday.</li>
+  <li><strong>No analytics, ads or tracking.</strong> The Game doesn't measure how you play, contains no advertising or analytics code, doesn't use the advertising identifier (IDFA) and doesn't follow you across other apps or websites. It never shows the "Allow tracking" prompt, because there's nothing to allow.</li>
+  <li><strong>No device access you didn't ask for.</strong> The Game doesn't access your location, contacts, camera, microphone, health data, browsing history or other apps' data. It can only <em>add</em> a picture to your photo library when you ask it to, and it can't read your photos.</li>
+  <li><strong>No servers of ours.</strong> The Game works offline and has no online features of its own: no chat, no social features, no user-generated content.</li>
+</ul>
+
+<h2 id="device">3. What stays on your device</h2>
+<ul>
+  <li><strong>Your save game:</strong> the haystack you're in, the machines you built, your coins, tools and upgrades, farm orders and your Sewing Cabinet collection. It's stored in the Game's private storage on your device and protected by your device's standard iOS data protection.</li>
+  <li><strong>Your settings:</strong> sound and music volume, haptics, look sensitivity, invert look, motion and color options, and a few "already shown" flags (for example, that a tip was already seen).</li>
+  <li><strong>Pictures you share:</strong> when you tap Share, the Game draws the picture on your device and keeps a temporary copy for the share sheet. iOS clears it automatically.</li>
+</ul>
+<p>None of this is sent to us. Deleting the Game deletes it from your device.</p>
+
+<h2 id="apple">4. Services run by Apple</h2>
+<p>Some parts of the Game use Apple's own services. Apple handles them under your Apple Account and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We don't receive your Apple Account details from them.</p>
+<ul>
+  <li><strong>In-app purchases and Haystack VIP.</strong> Purchases and subscriptions are processed entirely by Apple. The Game only receives Apple's confirmation of which products your Apple Account owns, and uses it on your device to unlock them. We never see your name, email address, card number or billing address. Apple gives us aggregated sales reports, as it does for every app. Manage or cancel Haystack VIP in iOS Settings → [your name] → Subscriptions.</li>
+  <li><strong>Game Center (optional).</strong> If your device is signed in to Game Center, the Game sends your scores (such as needles found) and achievements to Game Center, where other players can see them with your Game Center nickname, according to your Game Center settings. You can play without Game Center, or sign out in iOS Settings → Game Center.</li>
+  <li><strong>iCloud Backup (optional).</strong> If you've turned on iCloud Backup (or back up your device to a computer), your save is included with the rest of your apps' data. You and Apple control those backups; we can't access them.</li>
+  <li><strong>Crash reports (optional).</strong> If you've turned on <strong>Share With App Developers</strong> in iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements, Apple may share anonymous crash logs with us. We use them only to fix bugs, and you can turn this off in the same place.</li>
+  <li><strong>TestFlight (beta testers only).</strong> If you join a beta through TestFlight, Apple shares with us the name and email you were invited with and any feedback you choose to send. We use them only to run the beta.</li>
+</ul>
+
+<h2 id="sharing">5. Sharing pictures</h2>
+<p>The needle card and the session card have a Share button. It opens the standard iOS share sheet with a picture the Game drew on your device. You choose where it goes; we don't upload it anywhere.</p>
+
+<h2 id="children">6. Children</h2>
+<p>The Game is rated 4+ on the App Store, so it's suitable for players of all ages. It's made for a general audience, though, and isn't directed at children under 13 (it isn't in the App Store's Kids category). The Game collects no personal data from anyone, so we don't knowingly collect personal data from children under 13, or under the minimum age that applies in their country. If you're a parent or guardian and your child has emailed us, write to us and we'll delete the message.</p>
+
+<h2 id="rights">7. Your rights (GDPR)</h2>
+<p>We're based in Romania, in the European Union, so the EU General Data Protection Regulation (GDPR) applies. Because the Game doesn't give us any personal data, we hold nothing about you from the Game to access, correct, export or delete. Your save and settings are on your device and in your own backups, under your control.</p>
+<p>The only personal data we may handle is what you choose to send us by email: your email address and your message. For that, Claudiu Tigaroi (Clau SEWL) is the data controller. We use it only to answer you, on the basis of our legitimate interest in replying to your request (GDPR Article 6(1)(f)). We don't share it with anyone and we delete the conversation once it's no longer needed to help you.</p>
+<p>You can ask us at any time to see, correct or delete your emails, or object to our use of them, by writing to the address below. You also have the right to complain to a data protection authority: in Romania, the ANSPDCP (<a href="https://www.dataprotection.ro">dataprotection.ro</a>), or the authority in the EU country where you live or work.</p>
+
+<h2 id="changes">8. Changes</h2>
+<p>If a future version of the Game changes anything described here, we'll update this policy and the App Store privacy information <strong>before</strong> that version is released, and mention it in the update notes. The effective date at the top shows the current version.</p>
+
+<h2 id="contact">9. Contact</h2>
+<p>Claudiu Tigaroi (Clau SEWL), Romania<br>
+Email: <a href="mailto:claudiutigaroi@gmail.com">claudiutigaroi@gmail.com</a></p>
+</main>
+
+<footer>
+  <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+  © 2026 Clau SEWL · Made with a lot of hay.
+</footer>
+</body>
+</html>
